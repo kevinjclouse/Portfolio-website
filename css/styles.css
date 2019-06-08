@@ -1,0 +1,284 @@
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color: #357b70;
+Secondary Color (Orange): #e0b354;
+ */
+ /* Added the root pseudo-class here from 1.8 */
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --text-color1: #2b2b2b;
+  --primary-bg-color: lightblue;
+  --text-color2: #fff;
+  --active-color: Purple;
+  --weight: 700;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--primary-bg-color);
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+/* Hello World Heading */
+h1 {
+  font-size: 30px;
+  font-weight: var(--weight);
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--weight);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--weight);
+}
+
+/* Color is Purple */
+a {
+  color: var(--primary-color);
+}
+
+/* Check out my code link here */
+a:visited {
+  /* visited link */
+  color: var(--primary-color);
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+/* When you click the button it changes to this color for a sec */
+a:active {
+  /* selected link */
+  color: var(--active-color);
+}
+
+/* Added my button transitions in 1.7 here */
+.button, button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--primary-color);
+  color: var(--text-color2);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA form
+  at */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+.button_secondary {
+  /* color is orange */
+  background-color: var(--secondary-color);
+  /* color is dark grey */
+  color: var(--text-color);
+}
+
+/* Added my button transitions in 1.7 here */
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+/* Will take a look at the styling of the other CSS classes from the code below but later */
+.navigation-list_item--active {
+  text-decoration: none;
+}
+
+/* Example of selectors in 1.5 */
+a {
+  /* element selector */
+  color: red;
+}
+
+#my-link {
+  /* class selector */
+  color: green;
+}
+
+.my-link {
+  /* id selector */
+  color: blue;
+}
+
+/* profile_portrait implementation from 1.6 added a width of 250px & margin-right */
+.profile_portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+/* Page Footer in 1.6 */
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Added .profile from 1.6 */
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.profile_text {
+  flex: 1 1 100px;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header_item {
+  flex: 0 1 200px;
+}
+
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+/* This code below gets rid of the dots in my unordered list (list-style-type: none; in 1.6 */
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list_item--active {
+  text-decoration: none;
+}
+
+/* Grid fallback 1.6 */
+.grid_item {
+  display: inline-block;
+  width: 33%
+}
+
+/* Styling CSS Grid in 1.6 */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px
+}
+
+/* Added some padding to my Table 1.6 */
+.grid_item {
+  background-color: var(--primary-bg-color);
+  padding: 10px;
+  /* Set Width to auto */
+  width: auto;
+}
+/*.grid_item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}*/
+
+/* Added media queries from 1.7 here */
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* Added animation properties here (sun) from 1.7 Note*(Can also be EX: animation: 4s color-change infinite alternate linear;) */
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+/* Added a Color Animation to my sun from 1.7 here */
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
