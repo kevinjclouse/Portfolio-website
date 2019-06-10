@@ -123,7 +123,7 @@ button:focus,
 /* Example of selectors in 1.5 */
 a {
   /* element selector */
-  color: red;
+  color: #357b70;
 }
 
 #my-link {
