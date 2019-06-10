@@ -35,7 +35,6 @@ h3 {
   font-weight: 700;
 }
 
-/* Color is Purple */
 a {
   color: #357b70;
 }
@@ -49,6 +48,7 @@ a:visited {
 a:hover, a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
+  color: yellow;
 }
 
 /* When you click the button it changes to this color for a sec */
@@ -101,7 +101,7 @@ button {
   /* color is orange */
   background-color: #e0b354;
   /* color is dark grey */
-  color: undefined;
+  color: #2b2b2b;
 }
 
 /* Added my button transitions in 1.7 here */
