@@ -202,7 +202,7 @@ a {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .navigation-list_item--active {
@@ -212,6 +212,7 @@ a {
 .navigation-list_item {
   text-decoration: none;
 }
+
 /* Grid fallback 1.6 */
 .grid_item {
   display: inline-block;
