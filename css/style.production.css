@@ -209,6 +209,9 @@ a {
   text-decoration: none;
 }
 
+.navigation-list_item {
+  text-decoration: none;
+}
 /* Grid fallback 1.6 */
 .grid_item {
   display: inline-block;
