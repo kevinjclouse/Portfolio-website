@@ -115,11 +115,6 @@ button:focus,
   opacity: 0.8;
 }
 
-/* Will take a look at the styling of the other CSS classes from the code below but later */
-.navigation-list_item--active {
-  text-decoration: none;
-}
-
 /* Example of selectors in 1.5 */
 a {
   /* element selector */
