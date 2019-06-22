@@ -2,7 +2,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background-color: lightblue;
+  background-color: #282938;
+  color: #fff;
   /* Sets the font size to 16px */
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
@@ -14,12 +15,13 @@ h1 {
   font-weight: 700;
   font-variant: small-caps;
   text-decoration: underline;
-  color: #bf0b74;
+  color: lightblue;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 700;
+  color: orange;
 }
 
 h3 {
@@ -27,18 +29,20 @@ h3 {
   font-weight: 700;
 }
 
+/* Contact me */
 strong {
-  color: brown;
+  color: lightblue;
+  text-decoration: underline;
 }
 
 a {
-  color: #357b70;
+  color: #26c623;
 }
 
 /* Check out my code link here */
 a:visited {
   /* visited link */
-  color: #357b70;
+  color: #26c623;
 }
 
 a:hover, a:focus {
@@ -61,7 +65,7 @@ a:active {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
+  background-color: #26c623;
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -80,7 +84,7 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
+  background-color: #26c623;
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -95,9 +99,9 @@ button {
 
 .button_secondary {
   /* color is orange */
-  background-color: #e0b354;
+  background-color: #c97022;
   /* color is dark grey */
-  color: #2b2b2b;
+  color: #fff;
 }
 
 /* Added my button transitions in 1.7 here */
@@ -114,7 +118,7 @@ button:focus,
 /* Example of selectors in 1.5 */
 a {
   /* element selector */
-  color: #357b70;
+  color: pink;
 }
 
 #my-link {
@@ -221,10 +225,11 @@ a {
 
 /* Added some padding to my Table 1.6 */
 .grid_item {
-  background-color: lightblue;
+  background-color: #282938;
   padding: 10px;
   /* Set Width to auto */
   width: auto;
+  color: #fff;
 }
 /* This code is commented out .grid_item:last-child {
   grid-column: 3 / 3;
